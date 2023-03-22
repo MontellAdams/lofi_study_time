@@ -1,0 +1,6 @@
+start "" "%USERPROFILE%\Desktop\Spotify_Study\pomofocus.exe"
+start "" "%USERPROFILE%\AppData\Roaming\Spotify\Spotify.exe"
+python "%USERPROFILE%\Desktop\Spotify_Study\japaneseLoFiStudy.py"
+python "%USERPROFILE%\Desktop\Spotify_Study\turn_off_second_monitor.py"
+python "%USERPROFILE%\Desktop\Spotify_Study\govee_turn_on.py"
+python "%USERPROFILE%\Desktop\Spotify_Study\night_light.py"
