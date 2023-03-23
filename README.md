@@ -44,7 +44,7 @@ The batch file needs to path to the applications and python scripts and the assu
 
 Once the batch script has the correct paths, you can set up a task scheduler to automate the bash script. I currently force it to run at 7 PM M-F to ensure I get a few hours of study in.
 
-It's only interrupted gaming once haha You will need to make sure you configure environment variables for the following variables:
+It's only interrupted gaming once haha. You will need to make sure you configure environment variables for the following variables:
 
 <b>japaneseLoFiStudy.py</b>
 
