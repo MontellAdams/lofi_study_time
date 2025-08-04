@@ -1,64 +1,90 @@
-# Japanese LoFi Study
+readme_content = """# 🧘‍♂️ Japanese LoFi Study – Automated Focus Ritual
 
-![Test picture](https://www.japannakama.co.uk/wp-content/uploads/2021/09/aesthetic-anime-purple-lo-fi-backgrounds.jpg)
+![LoFi Background](https://wallpapers.com/images/hd/lo-fi-desktop-n7xhiluyi3nkxcju.jpg)
 
-<h2>My study ritual: </h2>
+A Python automation project that recreates my ideal study environment: calm lighting, LoFi beats, and zero distractions. This project was built to both improve my focus and sharpen my Python, API, and automation skills.
 
-I've always enjoyed listening to LoFi music while studying technical things and found that I have a "study ritual" that just seems to happen to improve my focus, so I figured I could automate it
+--_
 
+## 🧠 What It Does
 
-<html>
-<body>
+This tool simulates my personal study ritual using automation:
 
-<ul>
-<li>Turn off my room light (unfortunately not included here)</li>
-<li>Turn on my Govee lamp </li>
-<li>Turn on night light on my computer to reduce blue light</li>
-<li>Turn off my second monitor so I'm not distracted by Discord or Twitch</li>
-<li>Set up some tasks in the Pomodoro app -- usually 5+ Pomodoros</li>
-<li>Que the Lofi!</li>
-</ul>  
+- Turns on a Govee smart lamp via the Govee API
+- Activates Windows Night Light to reduce blue light
+- Turns off the second monitor to eliminate distractions like Discord/Twitch
+- Launches a curated LoFi playlist via Spotify Web API
+- Prepares me to queue up Pomodoro sessions
 
-</body>
-</html>
+---
 
+## 🛠 Technologies Used
 
+- **Python 3**
+- [Govee API](https://developer.govee.com/)
+- [Spotify Web API](https://developer.spotify.com/)
+- `spotipy`, `requests`, `pyautogui`, `pydirectinput`
+- Windows Task Scheduler
+- Environment variable configuration for secure keys
 
-<h2>Why Python?</h2> 
+---
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUNPFhhzbSCpEuXeYAFUQtsszTYopFbQ29g_fReo&usqp=CAE&s)
+## 💡 Why I Built It
 
-I really wanted to work on my Python skills and learn about APIs to automate more of my tasks for work. Figured a project that increased my productivity studying Python would be a win-win.[Shout out to FreeCodeCamp](https://www.youtube.com/watch?v=WXsD0ZgxjRw&ab_channel=freeCodeCamp.org)
+I was learning Python and APIs and wanted a project that had personal meaning and immediate impact. This automation lets me switch into “study mode” at the push of a button (or on a schedule). From smart lighting to focus music, it sets the tone for productive evenings — especially when learning technical skills.
 
-Then went from the Govee API to Spotify to learning about the pyautogui library 
+> Shoutout to [freeCodeCamp’s Python course](https://www.youtube.com/watch?v=WXsD0ZgxjRw&ab_channel=freeCodeCamp.org) for the jump start!
 
-This project lets me automate my study ritual and when configured with a task schedule I never forget it's time to start studying when my monitor turns off and I start hearing Eternal Youth
+---
 
+## 🖥️ System Requirements
 
+> **Note:** This is currently tailored for Windows devices.
 
-<h2>To Install: </h2>
+- Monitor settings must be set to “Extend”
+- Night Light must be off by default
+- Windows Task Scheduler is recommended for automation
+- .bat file included for scheduled execution
 
-<b> Currently this would only work for Windows machines </b>
+---
 
-The batch file needs to path to the applications and python scripts and the assumption is made that your Monitor project settings are currently set to 'Extend' and that Night Light is not enabled. 
+## 🔐 Environment Variables
 
-Once the batch script has the correct paths, you can set up a task scheduler to automate the bash script. I currently force it to run at 7 PM M-F to ensure I get a few hours of study in.
+Be sure to configure the following variables before running the scripts:
 
-It's only interrupted gaming once haha. You will need to make sure you configure environment variables for the following variables:
+### `spotifyStudy.py`
+- `SPOTIPY_CLIENT_ID`
+- `SPOTIPY_CLIENT_SECRET`
+- `SPOTIFY_USERNAME`
 
-<b>japaneseLoFiStudy.py</b>
+### `govee_turn_on.py`
+- `GOVEE_API_KEY`
+- `DEVICE_MAC_ADDRESS`
+- `DEVICE_MODEL`
 
-<li>'SPOTIPY_CLIENT_ID'</li>
-<li>'SPOTIPY_CLIENT_SECRET'</li>
-<li>'SPOTIFY_USERNAME'</li>
+---
 
-<b>govee_turn_on.py</b>
+## 🧪 How I Use It
 
-<li>'GOVEE_API_KEY'</li>
-<li>'DEVICE_MAC_ADDRESS'</li>
-<li>'DEVICE_MODEL'</li>
+I run the full stack via Task Scheduler at **7 PM, Monday–Friday** to kick off my evening study sessions. It’s only interrupted my gaming once 😅
 
+---
 
+## 🚀 Next Steps
 
+- Add Pomodoro timer integration
+- Include monitor dimming/night light toggles cross-platform
+- Option to set the playlist dynamically
 
+---
 
+## 📸 Demo
+
+*(Coming soon — GIF or video of the automation in action)*
+"""
+
+readme_path = "/mnt/data/README.md"
+with open(readme_path, "w") as f:
+    f.write(readme_content)
+
+readme_path
