@@ -1,1 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+.venv/
+venv/
+
+# MacOS & Windows
+.DS_Store
+Thumbs.db
+
+# Secrets or local configs
+.env
+*.env
+*.log
+
+# Spotipy & Spotify token cache
+.cache*
+.token*
+
+# Your specific cache
 .cache-thebootlegboy
+
+# Batch or Task Scheduler artifacts
+*.bat
+*.task
