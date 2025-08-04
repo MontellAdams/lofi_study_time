@@ -1,4 +1,4 @@
-readme_content = """# 🧘‍♂️ Japanese LoFi Study – Automated Focus Ritual
+🧘‍♂️ Japanese LoFi Study – Automated Focus Ritual
 
 ![LoFi Background](https://wallpapers.com/images/hd/lo-fi-desktop-n7xhiluyi3nkxcju.jpg)
 
@@ -83,8 +83,3 @@ I run the full stack via Task Scheduler at **7 PM, Monday–Friday** to kick off
 *(Coming soon — GIF or video of the automation in action)*
 """
 
-readme_path = "/mnt/data/README.md"
-with open(readme_path, "w") as f:
-    f.write(readme_content)
-
-readme_path
